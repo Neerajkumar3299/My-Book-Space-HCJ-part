@@ -51,8 +51,8 @@ function insertData(){
     fetch(api_url,options)
     .then((response)=>response.json())
     .then((data)=>{
-        console.log("Majnu bhai")
-        window.location.href = "http://127.0.0.1:5500/front-end/book_list.html";
+        alert("Book Added Successfully..")
+        window.location.href = "https://neerajkumar3299.github.io/My-Book-Space-HCJ-part/book_list.html";
         
     })
 }
@@ -69,7 +69,7 @@ function deleteData(id){
     fetch(api_url,options)
     .then((response)=>response.json())
     .then((data)=>{
-        console.log(data)
+        alert("Book deleted successfully..")
         window.location.reload(true);
     })
 }
