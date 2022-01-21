@@ -18,6 +18,7 @@ function printData(data){
     table.innerHTML=output_str
 }
 function getData(){
+    console.log("Hello Neeraj kumar How are you!!")
     fetch(api_url)
     .then((data)=>data.json())
     .then((data)=>{
