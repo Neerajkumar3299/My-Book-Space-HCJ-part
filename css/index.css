@@ -13,7 +13,7 @@
 .container .header{
     width: 100%;
     height: 100%;
-
+    padding: 10px 0px;
     display: flex;
     align-items: center;
     justify-content:center;
@@ -78,4 +78,193 @@ color: rgb(102, 226, 185);
 }
 .links a:active{
     text-decoration: underline;
+}
+
+
+/* -------------------------------Section Part --------------------------------------------*/
+.section{
+    width: 100%;
+    height: 100%;
+    margin: 20px 0px;
+}
+.function{
+    width: 50%;
+    height: 300px;
+    margin: 30px auto;
+
+display: flex;
+justify-content: space-around;
+}
+.function1{
+    width: 40%;
+    height: 100%;
+    border:1px solid rgb(240, 231, 236);
+    box-shadow: 2px 2px 5px rgb(247, 239, 239);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+}
+.function1 img{
+    width: 100%;
+    height: 80%;
+}
+.function1 a{
+    border: 1px solid red;
+    margin-top: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 20px;
+    font-weight: bold;
+
+}
+.function1 a:hover{
+    background-color: red;
+    color: white;
+}
+
+.about-website{
+    background-color: rgb(220, 233, 233);
+    width: 80%;
+    margin: 20px auto;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.about-website .part{
+    width: 20%;
+    height: 350px;
+    border: 1px solid rgb(250, 250, 202);
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgb(250, 250, 202);
+
+
+}
+.part img{
+    width: 100%;
+    height: 70%;
+    border: 1px solid rgb(235, 217, 226);
+    border-radius: 50%;
+}
+.part p{
+    text-align: center;
+    line-height: 20px;
+    margin-top: 15px;
+}
+
+/* ---------------------------------About Me------------------------------ */
+.about-me{
+    width: 50%;
+    height: 100%;
+    margin: 20px auto;
+    border: 1px solid rgb(219, 192, 206);
+    display: flex;
+
+}
+.about-me .part{
+    width: 50%;
+    height: 380px;
+    padding: 20px;
+}
+.about-me .part img{
+    width: 100%;
+    height: 100%;
+    border: 2px solid green;
+}
+#detail{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#detail p{
+    text-align: left;
+    line-height: 0px;
+    padding: 10px 0px;
+}
+/* --------------------------------------------Footer Part --------------------------------*/
+.footer{
+    width: 100%;
+    height: 100%;
+
+    padding: 20px 40px;
+    margin-top: 40px;
+    display: flex;
+    align-items: baseline;
+    background-color: rgb(231, 248, 248);
+}
+.footer .footer-part{
+    width: 30%;
+
+    margin-left: 30px;
+}
+.footer .footer-part h3{
+text-transform: uppercase;
+color: rgb(4, 245, 133);
+font-size: 22px;
+}
+i{
+    font-size: 30px;
+    margin: 20px 10px;
+}
+i:hover{
+    color: blueviolet;
+}
+hr{
+    color: rgb(247, 234, 234);
+    margin: 10px 0px;
+}
+.part i:hover{
+    color: black;
+}
+.part a:hover{
+    color: rgb(66, 66, 192);
+}
+.contact-us{
+    width: 100%;
+    height: 100%;
+    padding: 10px 0px;
+}
+.contact-us input{
+    display: block;
+    border: 1px solid rgb(241, 227, 227);
+    padding: 10px 20px ;
+    width: 100%;
+    margin-top: 10px;
+    box-shadow: 1px 1px 5px rgb(235, 228, 228);
+
+}
+.contact-us input:focus{
+    outline: none;
+    box-shadow: 2px 2px 5px rgb(190, 177, 177);
+}
+.contact-us textarea{
+    display: block;
+    width: 100%;
+    border: 1px solid rgb(245, 233, 233);
+    padding: 10px 20px ;
+    margin: 10px 0px;
+    box-shadow: 1px 1px 5px rgb(235, 228, 228);
+}
+.contact-us textarea:focus{
+    outline: none;
+    box-shadow: 2px 2px 5px rgb(190, 177, 177);
+}
+.contact-us button{
+    display: block;
+    padding: 9px 20px;
+    background-color: white;
+    font-weight: bold;
+    color: gray;
+    border: 1px solid rgb(221, 209, 209);
+    box-shadow: 1px 1px 5px rgb(235, 228, 228);
+}
+.contact-us button:hover{
+    box-shadow: 2px 2px 5px rgb(190, 177, 177);
+    cursor:pointer;
+}
+.contact-us input textarea button{
+    margin-top: 10px;
 }
