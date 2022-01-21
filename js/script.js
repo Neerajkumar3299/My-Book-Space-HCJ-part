@@ -1,5 +1,5 @@
 
-api_url="http://localhost:8080/book_list"
+api_url="https://mypersonalbookstore2022.herokuapp.com/book_list"
 
 function printData(data){
     let table=document.getElementById("tbody");
