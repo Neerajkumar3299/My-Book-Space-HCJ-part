@@ -3,13 +3,27 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 .container{
     width: 100%;
     height: 100%;
 
 
 }
+#slider{
+position: absolute;
+z-index: 1;
+right: 20px;
+padding: 10px;
+position: fixed;
 
+}
+.container i:hover{
+    background-color:rgba(70, 58, 58,0.1);
+    cursor: pointer;
+}
 .container .header{
     width: 100%;
     height: 100%;
@@ -17,12 +31,12 @@
     display: flex;
     align-items: center;
     justify-content:center;
-    margin-top: 30px;
+
     position: sticky;
     top: 0px;
     background-color: azure;
     border: 1px solid rgb(236, 230, 230);
-    border-radius: 20px;
+    box-shadow: 0px 2px 5px gray;
 }
 .logo{
     width: 30%;
@@ -45,6 +59,9 @@
     font-size:20px;
     color: rgb(53, 116, 172);
 }
+.logo a:hover{
+    color: rgb(10, 133, 255);;
+}
 .links{
     width: 60%;
    
@@ -56,6 +73,7 @@
     display: flex;
     justify-content: left;
     align-items:center;
+
 
 }
 .links li{
@@ -75,6 +93,7 @@
 }
 .links a:hover{
 color: rgb(102, 226, 185);
+text-decoration: underline;
 }
 .links a:active{
     text-decoration: underline;
@@ -82,6 +101,7 @@ color: rgb(102, 226, 185);
 
 
 /* -------------------------------Section Part --------------------------------------------*/
+
 .section{
     width: 100%;
     height: 100%;
@@ -128,14 +148,16 @@ justify-content: space-around;
 .about-website{
     background-color: rgb(220, 233, 233);
     width: 80%;
+    height: 100%;
     margin: 20px auto;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .about-website .part{
     width: 20%;
-    height: 350px;
+    height: auto;
     border: 1px solid rgb(250, 250, 202);
     padding: 10px;
     box-shadow: 2px 2px 5px rgb(250, 250, 202);
@@ -267,4 +289,130 @@ hr{
 }
 .contact-us input textarea button{
     margin-top: 10px;
+}
+
+
+/*-------------------------------  Responsive Things  (Media Query)  ---------------------------- */
+@media screen and (max-width:1042px){
+    .header{
+        flex-direction: column;
+       
+    }
+
+    .header .logo{
+        width: 90%;
+        justify-content: left;
+        margin-left: 20px;
+    }
+    .header .links ul{
+        border: 3px solid green;
+        flex-direction: column;
+        height:400px;
+       position: absolute;
+       top: -500px;
+       right: 0px;
+        background-color: rgba(0,0,0,0.5);
+        transition: top 0.3s ease;
+        
+    }
+    .links li{
+
+        width: 100%;
+        text-align:center;
+    }
+    .links li:hover{
+        background-color: rgba(0,0,0,0.6);
+    }
+    .links a{
+        margin-left: 50%;
+        transform: translateX(-50%);
+        color: white;
+    }
+}
+
+
+@media screen and (max-width:945px){
+
+    .function{
+        width: 80%;
+    }
+}
+@media screen and (max-width:510px){
+    .function{
+        width: 95%;
+        height: 100%;
+        flex-direction: column;
+
+    }
+    .function1{
+
+        width: 80%;
+        margin: 20px auto;
+    }
+    .function1 img{
+        height: auto;
+    }
+}
+@media screen and (max-width:1490px){
+    .about-website{
+    }
+    .about-website .part{
+        width: 30%;
+    }
+}
+@media screen and (max-width:1035px){
+    .about-website .part{
+        width: 40%;
+    }
+}
+@media screen and (max-width:840px){
+    .about-website {
+        
+        flex-direction: column;
+    }
+    .about-website .part{
+        width: 80%;
+        margin: auto;
+    }
+    .part img{
+        width: 60%;
+  
+        display: block;
+        margin: auto;
+    }
+}
+@media screen and (max-width:1106px){
+    .about-me{
+        width: 70%;
+    }
+}
+@media screen and (max-width:500px){
+    .about-me{
+        width: 90%;
+    }
+}
+@media screen and (max-width:866px){
+    .footer{
+        flex-direction: column;
+    }
+    .footer .footer-part{
+
+        width: 80%;
+        margin: auto;
+    }
+    .footer-part h3{
+        text-align: center;
+    }
+    .footer-part i{
+        text-align: center;
+    }
+    .contact-us button{
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+}
+@media screen and (max-width:418px){
+.footer-part{
+    width: 95%;
+}
 }

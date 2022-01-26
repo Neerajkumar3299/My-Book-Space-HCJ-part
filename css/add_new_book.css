@@ -17,14 +17,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 30px;
+
     position: sticky;
     top: 0px;
     background-color: azure;
     display: flex;
     justify-content: left;
     border: 1px solid rgb(236, 230, 230);
-    border-radius: 20px;
+    box-shadow: 0px 2px 5px gray;
 }
 
 .logo {
@@ -32,8 +32,7 @@
 
     display: flex;
     align-items: center;
-    justify-content: left;
-    margin-left: 200px;
+    justify-content: center;
 }
 
 .logo img {
@@ -54,10 +53,10 @@
 
 .search_bar {
 
-    width: 20%;
-
-    position: absolute;
-    right: 0px;
+    width: 70%;
+    display: flex;
+    justify-content: right;
+    padding-right: 10px;
 }
 
 .search_bar input {
@@ -143,6 +142,7 @@ background-color: rgb(250, 237, 237);
     font-size: 16px;
     color: gray;
     box-shadow: 2px 2px 5px rgb(235, 223, 223);
+    z-index: 0;
 }
 button:hover{
     cursor: pointer;
@@ -237,4 +237,58 @@ hr{
 }
 .contact-us input textarea button{
     margin-top: 10px;
+}
+/*      -------------------------------MEDIA QUERY PART ------------*/
+
+
+@media screen and (max-width:587px){
+    .header{
+        flex-direction: column;
+    }
+    .logo{
+        width: 100%;
+    }
+    .search_bar{
+        width: 100%;
+        justify-content: center;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:920px){
+    .section .form{
+        width: 70%;
+        border: 2px solid red;
+    }
+}
+@media screen and (max-width:590px){
+    .section .form{
+        width: 90%;
+        border: 2px solid red;
+    }
+}
+@media screen and (max-width:866px){
+    .footer{
+        flex-direction: column;
+    }
+    .footer .footer-part{
+
+        width: 80%;
+        margin: auto;
+    }
+    .footer-part h3{
+        text-align: center;
+    }
+    .footer-part i{
+        text-align: center;
+    }
+    .contact-us button{
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+}
+@media screen and (max-width:418px){
+.footer-part{
+    width: 95%;
+}
 }
