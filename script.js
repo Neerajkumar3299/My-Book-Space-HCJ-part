@@ -50,8 +50,8 @@ function insertData(){
     fetch(api_url,options)
     .then((response)=>response.json())
     .then((data)=>{
-        window.location.href = "https://neerajkumar3299.github.io/My-Book-Space-HCJ-part/book_list";
-        
+        console.log(data)
+            window.location.href='https://neerajkumar3299.github.io/My-Book-Space-HCJ-part/book_list'
     })
 }
 
