@@ -11,7 +11,7 @@ function printData(data){
         output_str=output_str+`<td> ${data[i]['sub_name']}</td>`
         output_str=output_str+`<td> ${data[i]['author']}</td>`
         output_str=output_str+`<td> <a href='${data[i]['download_link']}'>download</a></td>`
-        output_str=output_str+`<td><a href="http://127.0.0.1:5500/edit.html?id=${data[i]._id}"><i class="fas fa-pen"></i></a><button onclick=deleteData('${data[i]._id}')><i class="fas fa-trash-alt" ></i></button></td>`
+        output_str=output_str+`<td><a href="https://neerajkumar3299.github.io/My-Book-Space-HCJ-part/edit.html?id=${data[i]._id}"><i class="fas fa-pen"></i></a><button onclick=deleteData('${data[i]._id}')><i class="fas fa-trash-alt" ></i></button></td>`
         output_str=output_str+`</tr>`
     }
     table.innerHTML=output_str
