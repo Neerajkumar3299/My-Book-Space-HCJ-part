@@ -89,6 +89,7 @@ function getDataById(id){
 }
 function editData(elem){
     if(elem){
+        document.getElementById("id").value=elem['_id']
         document.getElementById('image_link').value=elem['book_image_link']
         document.getElementById('book_name').value=elem['book_name']
         document.getElementById('sub_name').value=elem['sub_name']
@@ -101,16 +102,18 @@ function editData(elem){
 }
 
 function putData(){
+        let id=document.getElementById("id").value
         let image_link=document.getElementById('image_link').value
         let book_name=document.getElementById('book_name').value
         let sub_name=document.getElementById('sub_name').value
         let author_name=document.getElementById('author_name').value
         let download_link=document.getElementById('download_link').value
         data={
-            image_link:image_link,
+            _id:id,
+            book_image_link:image_link,
             book_name:book_name,
             sub_name:sub_name,
-            author_name:author_name,
+            author:author_name,
             downlaod_link:download_link
         }
         options={
